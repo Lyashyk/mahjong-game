@@ -1,0 +1,33 @@
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 32px;
+    height: 42px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10%;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.Button--visite {
+    animation: buttonVisitedAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes buttonVisitedAnimation {
+    from {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+
+    to {
+        box-shadow: 0 0 6px rgba(143, 6, 150, 0.4);
+    }
+}
