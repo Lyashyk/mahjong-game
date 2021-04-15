@@ -4,7 +4,7 @@
     align-items: center;
     width: 100%;
     min-width: 32px;
-    height: 42px;
+    height: 56px;
     border: none;
     outline: none;
     background-color: #fff;
@@ -18,7 +18,7 @@
 
 .Button--visite {
     animation: buttonVisitedAnimation;
-    animation-duration: 0.5s;
+    animation-duration: 0.6s;
     animation-fill-mode: forwards;
 }
 
@@ -28,6 +28,6 @@
     }
 
     to {
-        box-shadow: 0 0 6px rgba(143, 6, 150, 0.4);
+        box-shadow: 0 0 6px rgba(143, 6, 150, 0.6);
     }
 }

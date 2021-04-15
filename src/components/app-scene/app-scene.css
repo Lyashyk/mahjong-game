@@ -3,4 +3,10 @@
 .AppScene-title{
     text-align: center;
     font-size: 64px;
+    margin-bottom: 64px;
+}
+
+.AppScene-grid{
+    margin: 0 auto;
+    width: 640px;
 }
