@@ -1,20 +1,20 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import Button from '../button/button';
+
+import { getArr } from '../../reducer';
 
 import './grid.css';
 
 const Grid = () => {
-    const _arr = [];
 
-    for (let i = 0; i < 30; i++) {
-        _arr.push(i);
-    }
+    const arr = useSelector(getArr);
 
     return <div className="Grid">
         {
-            _arr.map((item, index) => <div className="Grid-item" index={index}>
-                <Button title={item} />
+            arr.map((item, index) => <div className="Grid-item" index={index}>
+                <Button index={index} {...item} />
             </div>)
         }
     </div>;
