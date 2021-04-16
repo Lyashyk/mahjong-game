@@ -22,6 +22,26 @@
     animation-fill-mode: forwards;
 }
 
+.Button--completed{
+    animation: buttonComplatedAnimation;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.Button--hide{
+
+}
+
+.Button-title{
+    opacity: 1;
+}
+
+.Button--hide .Button-title{
+    animation: buttonHideAnimation;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
 @keyframes buttonVisitedAnimation {
     from {
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
@@ -30,4 +50,29 @@
     to {
         box-shadow: 0 0 6px rgba(143, 6, 150, 0.6);
     }
+}
+
+@keyframes buttonComplatedAnimation {
+    from {
+        box-shadow: 0 0 6px rgba(143, 6, 150, 0.6);
+    }
+
+    to {
+        box-shadow: 0 0 6px rgba(53, 191, 25, 0.6);
+    }
+}
+
+@keyframes buttonHideAnimation {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.Button:disabled {
+    color: #000;
+    cursor: default;
 }
